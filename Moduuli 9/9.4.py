@@ -20,7 +20,8 @@ class Auto:
 autot = []
 for i in range(10):
     autot.append(Auto(f'ABC-{i + 1}', random.randint(100, 200)))
-while True:
+
+while autot[i].distance < 10000:
     for i in range(10):
         autot[i].accelerate(random.randint(-10,15))
     for i in range(10):
@@ -28,5 +29,8 @@ while True:
         if autot[i].distance >= 10000:
             print(f'{autot[i].register} voitti kisan!')
             break
+
+
+
 for i in range(10):
         print(f'{autot[i].register}, Topspeed:{autot[i].topspd}, {autot[i].currentspd}, {autot[i].distance}.')
