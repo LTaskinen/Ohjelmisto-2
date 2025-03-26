@@ -5,11 +5,6 @@ class Hissi:
         self.hetkinen = hetkinen
 
     def siirry_kerrokseen(self, kerros):
-        if kerros > self.ylin_kerros:
-            print('Hississä ei ole pyydettyä kerrosta')
-        elif kerros < self.alin_kerros:
-            print('Pyydetty kerros alittaa hissin kerrokset')
-        else:
             while kerros != self.hetkinen:
                 if kerros > self.hetkinen:
                     self.kerros_ylös()
